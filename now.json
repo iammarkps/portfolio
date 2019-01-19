@@ -8,6 +8,6 @@
   ],
   "routes": [
     { "src": "/", "dest": "/" },
-    { "src": "/present", "dest": "/slide/tusc" }
+    { "src": "/present", "dest": "/slide/index.html" }
   ]
 }
