@@ -1,0 +1,6 @@
+{
+  "name": "iammark",
+  "version": 2,
+  "alias": "iammark.me",
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+}
