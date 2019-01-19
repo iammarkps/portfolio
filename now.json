@@ -2,12 +2,15 @@
   "name": "iammark",
   "version": 2,
   "alias": "iammark.me",
-  "builds": [
-    { "src": "package.json", "use": "@now/static-build" },
-    { "src": "slide/tusc.mdx", "use": "@now/mdx-deck" }
-  ],
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "routes": [
     { "src": "/", "dest": "/" },
-    { "src": "/present", "dest": "/slide/index.html" }
+    {
+      "src": "/w/sports",
+      "status": 302,
+      "headers": {
+        "Location": "https://www.facebook.com/markposswat/media_set?set=a.2361897430505126&type=1"
+      }
+    }
   ]
 }
