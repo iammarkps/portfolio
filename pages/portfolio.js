@@ -54,6 +54,26 @@ const PHOTO_SET = [
     ],
     width: '6000',
     height: '4000'
+  },
+  {
+    src: '/static/img/7-fullsize.jpg',
+    srcSet: [
+      '/static/img/7-500.jpg 500w',
+      '/static/img/7-1000.jpg 1000w',
+      '/static/img/7-2000.jpg 2000w'
+    ],
+    width: '2500',
+    height: '3081'
+  },
+  {
+    src: '/static/img/6-fullsize.jpg',
+    srcSet: [
+      '/static/img/6-500.jpg 500w',
+      '/static/img/6-1000.jpg 1000w',
+      '/static/img/6-2000.jpg 2000w'
+    ],
+    width: '6000',
+    height: '4000'
   }
 ]
 
