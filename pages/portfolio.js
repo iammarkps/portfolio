@@ -5,11 +5,56 @@ import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
 
 const PHOTO_SET = [
-  { src: '/static/img/1.jpg', width: '5499', height: '3565' },
-  { src: '/static/img/2.jpg', width: '6000', height: '4000' },
-  { src: '/static/img/3.jpg', width: '5907', height: '3938' },
-  { src: '/static/img/4.jpg', width: '6000', height: '4000' },
-  { src: '/static/img/5.jpg', width: '6000', height: '4000' }
+  {
+    src: '/static/img/1-fullsize.jpg',
+    srcSet: [
+      '/static/img/1-500.jpg 500w',
+      '/static/img/1-1000.jpg 1000w',
+      '/static/img/1-2000.jpg 2000w'
+    ],
+    width: '5499',
+    height: '3565'
+  },
+  {
+    src: '/static/img/2-fullsize.jpg',
+    srcSet: [
+      '/static/img/2-500.jpg 500w',
+      '/static/img/2-1000.jpg 1000w',
+      '/static/img/2-2000.jpg 2000w'
+    ],
+    width: '6000',
+    height: '4000'
+  },
+  {
+    src: '/static/img/3-fullsize.jpg',
+    srcSet: [
+      '/static/img/3-500.jpg 500w',
+      '/static/img/3-1000.jpg 1000w',
+      '/static/img/3-2000.jpg 2000w'
+    ],
+    width: '5907',
+    height: '3938'
+  },
+  {
+    src: '/static/img/4-fullsize.jpg',
+    srcSet: [
+      '/static/img/4-500.jpg 500w',
+      '/static/img/4-1000.jpg 1000w',
+      '/static/img/4-2000.jpg 2000w'
+    ],
+    width: '6000',
+    height: '4000'
+  },
+  {
+    src: '/static/img/5-fullsize.jpg',
+    srcSet: [
+      '/static/img/5-500.jpg 500w',
+      '/static/img/5-1000.jpg 1000w',
+      '/static/img/5-2000.jpg 2000w'
+    ],
+    width: '6000',
+    height: '4000'
+  }
 ]
 
 export default class Portfolio extends React.Component {
@@ -445,6 +490,11 @@ export default class Portfolio extends React.Component {
               border-radius: 5px;
               margin-right: 10px;
               margin-top: 10px;
+              transition: all 0.5s ease;
+            }
+
+            .skill:hover {
+              border: 1px solid black;
             }
 
             .skill p {
