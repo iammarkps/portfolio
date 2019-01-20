@@ -73,13 +73,14 @@ export default class Portfolio extends React.Component {
   openLightbox = (event, obj) => {
     this.setState({
       currentImage: obj.index,
-      lightboxIsOpen: true
+      isLightBoxOpen: true
     })
   }
+
   closeLightbox = () => {
     this.setState({
       currentImage: 0,
-      lightboxIsOpen: false
+      isLightBoxOpen: false
     })
   }
 
@@ -328,7 +329,7 @@ export default class Portfolio extends React.Component {
                 onClickPrev={this.gotoPrevious}
                 onClickNext={this.gotoNext}
                 currentImage={this.state.currentImage}
-                isOpen={this.state.lightboxIsOpen}
+                isOpen={this.state.isLightBoxOpen}
                 backdropClosesModal={true}
               />
               <h3 className="tusc">#votemarkfortusc62</h3>
