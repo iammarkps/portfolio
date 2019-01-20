@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "next": "^7.0.2",
+    "next-offline": "^3.3.5",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-images": "^0.5.19",

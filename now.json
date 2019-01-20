@@ -11,6 +11,14 @@
       "headers": {
         "Location": "https://www.facebook.com/markposswat/media_set?set=a.2361897430505126&type=1"
       }
+    },
+    {
+      "src": "^/service-worker.js$",
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
     }
   ]
 }
