@@ -2,6 +2,15 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
+const Quotes = [
+  'Aut viam inveniam aut faciam',
+  'Fugit inreparabile tempus',
+  'Quinon proficit deficit',
+  'Omne ignotum pro magnifico',
+  'Audentes fortuna iuvat',
+  'Non omnia possumus omnes'
+]
+
 export default () => (
   <React.Fragment>
     <Head>
@@ -20,6 +29,9 @@ export default () => (
       <div className="header">
         <h1>I AM MARK</h1>
         <p>TU81 | Programmer | Photographer</p>
+        <p className="quotes">
+          {Quotes[Math.floor(Math.random() * Quotes.length)]}
+        </p>
       </div>
 
       <div className="footer">
@@ -181,6 +193,11 @@ export default () => (
         .right a {
           display: inline-block;
           margin-right: 30px;
+        }
+
+        .quotes {
+          font-style: italic;
+          margin-top: 50px;
         }
 
         @media only screen and (max-width: 40em) {
