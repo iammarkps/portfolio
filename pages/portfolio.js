@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
+import Countdown from 'react-countdown-now'
 
 const PHOTO_SET = [
   {
@@ -64,6 +65,16 @@ const PHOTO_SET = [
     ],
     width: '2500',
     height: '3081'
+  },
+  {
+    src: '/static/img/8-fullsize.jpg',
+    srcSet: [
+      '/static/img/8-500.jpg 500w',
+      '/static/img/8-1000.jpg 1000w',
+      '/static/img/8-2000.jpg 2000w'
+    ],
+    width: '4096',
+    height: '3210'
   },
   {
     src: '/static/img/6-fullsize.jpg',
@@ -229,10 +240,10 @@ export default class Portfolio extends React.Component {
               <h2>Possawat Suksai</h2>
               <p>
                 I'm currently an M.4 student in Triam Udom Suksa School. My
-                passion is to make the world a better place to live. I'm
-                interested in Photography, Programming and Artificial
-                Intelligence. My dream is to study abroad in the USA and I'm
-                trying my best to make that come true.
+                passion is to make the world a better place to live with
+                technology. I'm interested in Photography, Programming and
+                Artificial Intelligence. My dream is to study abroad in the USA
+                and I'm trying my best to make that come true.
                 <br />
                 <br />
                 <p>Facts about me!</p>
@@ -273,7 +284,6 @@ export default class Portfolio extends React.Component {
                       System
                     </li>
                     <li>Updating news</li>
-                    <li>Managing analytics of Clubs Member</li>
                   </ul>
                 </p>
               </div>
@@ -339,6 +349,9 @@ export default class Portfolio extends React.Component {
                   <a href="/w/sports">iammark.me/w/sports</a>
                 </p>
               </div>
+              <div className="pastwork">
+                <h2>Creator of Triam Udom Open House website</h2>
+              </div>
             </div>
             <div id="gallery" ref={this.gallery}>
               <h2>Gallery</h2>
@@ -352,19 +365,16 @@ export default class Portfolio extends React.Component {
                 isOpen={this.state.isLightBoxOpen}
                 backdropClosesModal={true}
               />
-              <h3 className="tusc">#votemarkfortusc62</h3>
+              <div className="tusc">
+                <h3>#votemarkfortusc62</h3>
+                <Countdown date={'Thu, 31 Jan 2019 11:20:00'} />
+              </div>
             </div>
           </div>
           <style jsx>{`
             .tusc {
               text-align: center;
               margin-top: 50px;
-              color: #999;
-              transition: all 0.2s ease;
-            }
-
-            .tusc:hover {
-              color: black;
             }
 
             @keyframes fadein {
@@ -561,6 +571,7 @@ export default class Portfolio extends React.Component {
               .content {
                 width: 100%;
               }
+
               h2 {
                 font-size: 1.5em;
               }
@@ -570,19 +581,24 @@ export default class Portfolio extends React.Component {
                 position: relative;
                 top: none;
               }
+
               .sidebar {
                 padding: 0px;
                 width: 100%;
               }
+
               .skills {
                 flex-direction: column;
               }
+
               .skill {
                 margin-bottom: 12px;
               }
+
               .wrapper {
                 flex-direction: column;
               }
+
               .name {
                 margin-bottom: 0;
                 position: relative;
