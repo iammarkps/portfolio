@@ -239,11 +239,11 @@ export default class Portfolio extends React.Component {
               <h3>12 March 2003 - present</h3>
               <h2>Possawat Suksai</h2>
               <p>
-                I'm currently an M.4 student in Triam Udom Suksa School. My
-                passion is to make the world a better place to live with
-                technology. I'm interested in Photography, Programming and
-                Artificial Intelligence. My dream is to study abroad in the USA
-                and I'm trying my best to make that come true.
+                I'm Triam Udom Student Comittee candidate for photography
+                position. I'm in M4 room 333. At first I don't pass the
+                photography clubs audition, but my passion about photography
+                still exist. I continue to take photo, So please vote number 3
+                for photography position.
                 <br />
                 <br />
                 <p>Facts about me!</p>
