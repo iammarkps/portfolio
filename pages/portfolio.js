@@ -365,10 +365,6 @@ export default class Portfolio extends React.Component {
                 isOpen={this.state.isLightBoxOpen}
                 backdropClosesModal={true}
               />
-              <div className="tusc">
-                <h3>#votemarkfortusc62</h3>
-                <Countdown date={'Thu, 31 Jan 2019 11:20:00'} />
-              </div>
             </div>
           </div>
           <style jsx>{`
