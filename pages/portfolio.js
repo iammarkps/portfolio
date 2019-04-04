@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
-import Countdown from 'react-countdown-now'
 
 const PHOTO_SET = [
   {
@@ -239,11 +238,11 @@ export default class Portfolio extends React.Component {
               <h3>12 March 2003 - present</h3>
               <h2>Possawat Suksai</h2>
               <p>
-                I'm Triam Udom Student Comittee candidate for photography
-                position. I'm in M4 room 333. At first I don't pass the
-                photography clubs audition, but my passion about photography
-                still exist. I continue to take photo, So please vote number 3
-                for photography position.
+                I born at 12 March 2003, My passion is to make the world a
+                better world through coding and photography. I code in
+                JavaScript and my favourite front-end framework is ReactJS. My
+                backend framework is KoaJS. Now I'm learning Kubernetes, cloud
+                computing and blockchain!
                 <br />
                 <br />
                 <p>Facts about me!</p>
@@ -317,6 +316,9 @@ export default class Portfolio extends React.Component {
                 <div className="skill">
                   <p>JavaScript</p>
                 </div>
+                <div className="skill">
+                  <p>ReactJS</p>
+                </div>
               </div>
             </div>
 
@@ -351,6 +353,11 @@ export default class Portfolio extends React.Component {
               </div>
               <div className="pastwork">
                 <h2>Creator of Triam Udom Open House website</h2>
+                <p>
+                  <a href="https://github.com/iammarkps/openhouse">
+                    github.com/iammarkps/openhouse
+                  </a>
+                </p>
               </div>
             </div>
             <div id="gallery" ref={this.gallery}>
